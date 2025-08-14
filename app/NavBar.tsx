@@ -14,7 +14,7 @@ const NavBar = () => {
       { label: 'Contact', href: '/contact'},
   ]
 return (
-  <nav className='flex space-x-6 border-b border-white bg-black mb-5 px-5 h-14 items-center text-white'>
+  <nav className='fixed w-full flex space-x-6 border-b border-white bg-black px-5 h-14 items-center text-white z-50'>
       <Link href="/" className="text-white font-bold text-lg">Matheus Gaston</Link> 
       <ul className='flex space-x-6'>
           {links.map(link =>

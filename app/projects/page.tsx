@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 const ProjectsPage = () => {
 return (
-  <div className="min-h-screen bg-black text-white p-8">
+  <div className="min-h-screen bg-black text-white p-8 py-16">
     <h1 className="text-5xl font-bold text-center mb-12">PROJECTS</h1>
 
     <section className="flex flex-col lg:flex-row bg-black rounded-lg overflow-hidden shadow-lg mb-12 border border-white rounded-xl">

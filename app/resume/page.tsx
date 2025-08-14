@@ -13,7 +13,7 @@ const handleButtonClick = (pdfType: 'portugues' | 'ingles') => {
 };
 
 return (
-  <div className="min-h-screen bg-black text-white p-8 flex flex-col items-center">
+  <div className="min-h-screen bg-black text-white py-16 p-8 flex flex-col items-center">
     <h1 className="text-5xl font-bold text-center mb-8">RESUME</h1>
 
     <div className="flex space-x-4 mb-8">

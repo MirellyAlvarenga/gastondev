@@ -2,7 +2,7 @@ import React from 'react'
 
 const ContactPage = () => {
   return (
-    <div className="min-h-screen bg-black text-white p-8">
+    <div className="min-h-screen bg-black text-white p-8 py-16">
       <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-8">
         {/* ESQUERDA */}
         <div>
