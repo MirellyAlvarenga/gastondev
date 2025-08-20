@@ -2,31 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-  }
-}
-
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+margin: 0;
+padding: 0;
+box-sizing: border-box;
 }
 html {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-body {
-  color: rgb(var(--foreground-rgb));
-  background-color: black;
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 #main {
-  padding-top: 60px;
+padding-top: 60px; 
 }

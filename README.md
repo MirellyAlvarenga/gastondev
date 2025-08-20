@@ -1,4 +1,4 @@
-# GastonDev – Personal Portfolio
+# Mirelly Alvarenga – Personal Portfolio
 
 Bem-vindo ao meu **portfólio pessoal**! 
 
