@@ -1,9 +1,11 @@
 import React from 'react'
+import { Timeline } from '../_components/timeline'
+import { experience } from "@/lib/data";
 
-const ExperiencesPage = () => {
+export default async function Page() {
   return (
-    <div>ExperiencesPage</div>
-  )
+    <div className='h-full'>
+      <Timeline data={experience} />
+    </div>
+  );
 }
-
-export default ExperiencesPage

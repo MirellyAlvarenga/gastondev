@@ -1,13 +1,22 @@
 'use client'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation';
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import classnames from 'classnames';
 import { useTheme } from 'next-themes'; 
 
 const NavBar = () => {
 const currentPath = usePathname();
 const { theme } = useTheme();
+const [mounted, setMounted] = useState(false);
+
+useEffect(() => {
+    setMounted(true);
+}, []);
+
+if (!mounted) {
+  return null;
+}
 
 const links = [
     { label: 'Home', href: '/'},
