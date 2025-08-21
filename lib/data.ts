@@ -13,7 +13,7 @@ export const experience : Experience[] = [
         id: 2,
         title: "FullStack Software Developer Intern - TAGNA",
         img_url: "/images/tagna.png",
-        description: "Analyzed data trends and created reports using Python and SQL.",
+        description: "Monitor backend services built with Java and Spring Boot to ensure they remain stable and performant; Assist in debugging and fixing issues in both backend (Java, SQL) and frontend (React.js, TypeScript, Tailwind) ;Maintain and optimize database queries in SQL Support deployments and environment configuration in Google Cloud Work on UI/UX refinements using TailwindCSS and bug fixing in the frontend; Write documentation for fixes, patches, and maintenance updates; Collaborate with the team using Scrum and Agile methodologies; Test changes to ensure existing features keep working after updates",
         date: "Jul 25 - Today",
         badges: ["Java", "SpringBoot", "React.js", "TypeScript", "Tailwind", "Google Cloud", "SQL", "Scrum"]
     }

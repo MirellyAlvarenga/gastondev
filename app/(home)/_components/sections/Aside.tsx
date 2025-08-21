@@ -8,13 +8,13 @@ const Aside = () => {
   const { theme, setTheme } = useTheme();
   const { translations, language, toggleLanguage } = useLanguage();
   return (
-    <aside className="fixed top-14 left-0 w-56 h-[calc(100vh-64px)] flex flex-col items-center p-4 bg-white dark:bg-black text-black dark:text-gray-200 shadow-lg">
+    <aside className="flex flex-col items-center lg:sticky lg:top-[var(--navbar-height)] lg:h-[calc(100vh-var(--navbar-height))] lg:py-10">
       <img
-        src="/images/Mirelly.jpeg"
-        alt="Mirelly Alvarenga"
+        src="/images/Gaston.jpg"
+        alt="Matheus Gaston"
         className="rounded-full outline-1 outline-offset-4 drop-shadow-lg drop-shadow-black w-2/3"
       />
-      <h1 className="text-lg font-bold p-2 text-center">Mirelly Alvarenga</h1>
+      <h1 className="text-lg font-bold p-2 text-center">Matheus Gaston</h1>
       <h2 className="text-sm text-center">{translations.softwareEngineer}</h2>
       <div className="flex flex-col items-center p-2 w-full">
         <Link

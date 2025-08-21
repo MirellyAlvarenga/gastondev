@@ -13,7 +13,9 @@ padding: 0;
 box-sizing: border-box;
 transition: background-color 0.3s ease, color 0.3s ease;
 }
-
+:root {
+  --navbar-height: 60px;
+}
 #main {
 padding-top: 60px; 
 }

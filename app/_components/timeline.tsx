@@ -44,7 +44,7 @@ export const Timeline = ({ data }: { data: Experience[] }) => {
   const opacityTransform = useTransform(scrollYProgress, [0, 0.1], [0, 1]);
   return (
     <div className="text-white w-full" ref={containerRef}>
-      <h1 className="flex text-white p-16 justify-center text-3xl font-bold">
+      <h1 className="flex text-white p-4 justify-center text-3xl font-bold">
         My Experiences
       </h1>
       <div className="relative max-w-7xl mx-auto pb-20" ref={ref}>
@@ -53,16 +53,16 @@ export const Timeline = ({ data }: { data: Experience[] }) => {
             key={index}
             className="flex justify-start pt-10 md:pt-28 md:gap-10"
           >
-            <div className="sticky flex flex-col md:flex-row z-100 items-center top-40 self-start max-w-xs lg:max-w-sm md:w-full">
-              <div className="h-10 absolute left-3 md:left-3 w-10  bg-background border flex items-center justify-center rounded-3xl">
-                <div className="h-4 w-4 bg-secondary p-2 border rounded-lg" />
+            <div className="sticky flex flex-col md:flex-row z-100 items-center top-40 self-start max-w-xs lg:max-w-sm md:w-full z-40">
+              <div className="h-10 absolute left-3 md:left-3 w-10  bg-background border flex items-center justify-center rounded-3xl z-40">
+                <div className="h-4 w-4 bg-black rounded-full border z-40" />
               </div>
-              <h3 className="hidden md:block md:pl-20 md:text-3xl font-bold text-muted-foreground/50 ">
+              <h3 className="text-gray-300 hidden md:block md:pl-20 md:text-3xl font-bold text-muted-foreground/50 ">
                 {item.date}
               </h3>
             </div>
             <div>
-              <p className="mb-8 font-normal text-xl">{item.title}</p>
+              <p className="mb-8 font-bold text-xl md:text-3xl">{item.title}</p>
               <p className="mb-8 text-muted-foreground">{item.description}</p>
               <div className="flex flex-wrap gap-2 items-center ">
                 {item.badges.map((i) => (
@@ -75,14 +75,13 @@ export const Timeline = ({ data }: { data: Experience[] }) => {
                   alt={item.img_url}
                   width={400}
                   height={400}
-                  style={{ width: '400px', height: '400px' }}
                   onLoad={() => {
                     if (ref.current) {
                       const rect = ref.current.getBoundingClientRect();
                       setHeight(rect.height);
                     }
                   }}
-                  className="w-full aspect-video object-cover shadow-md my-6"
+                  className="w-full aspect-video object-cover shadow-md my-6 rounded-xl"
                 />
               )}
             </div>

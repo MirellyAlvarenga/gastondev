@@ -5,16 +5,16 @@ import { Badge } from "./badges";
 
 interface TechBadgeProps {
     tech: string;
-    key: string;
+    id?: string;
 }
 
-export default function TechBadge({ tech, key }: TechBadgeProps) {
+export default function TechBadge({ tech, id }: TechBadgeProps) {
 
     return (
         <motion.div
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.95 }}
-            key={key}
+            key={id}
         >
             <Badge className="hover:cursor-default hover:select-none">{tech}</Badge>
         </motion.div>
