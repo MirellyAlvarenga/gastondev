@@ -7,7 +7,6 @@ import {
 } from "motion/react";
 import { Experience } from "@/lib/definitions";
 import React, { useEffect, useRef, useState } from "react";
-import { div } from "motion/react-client";
 import Image from "next/image";
 import TechBadge from "./techBadges";
 
@@ -62,7 +61,7 @@ export const Timeline = ({ data }: { data: Experience[] }) => {
               </h3>
             </div>
             <div>
-              <p className="mb-8 font-bold text-xl md:text-3xl">{item.title}</p>
+              <p className="mb-8 font-bold text-3xl">{item.title}</p>
               <p className="mb-8 text-muted-foreground">{item.description}</p>
               <div className="flex flex-wrap gap-2 items-center ">
                 {item.badges.map((i) => (

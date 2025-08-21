@@ -24,7 +24,7 @@ export default function Home() {
   const { translations, language, toggleLanguage } = useLanguage();
 
   return (
-    <div className="flex mt-8">
+    <div className="flex mt-8 bg-white dark:bg-black">
       <Aside />
       <div
         id="main"
