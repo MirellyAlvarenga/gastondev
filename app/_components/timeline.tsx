@@ -52,8 +52,8 @@ export const Timeline = ({ data }: { data: Experience[] }) => {
             key={index}
             className="flex justify-start pt-10 md:pt-28 md:gap-10"
           >
-            <div className="sticky flex flex-col md:flex-row z-100 items-center top-40 self-start max-w-xs lg:max-w-sm md:w-full z-40">
-              <div className="h-10 absolute left-3 md:left-3 w-10  bg-background border flex items-center justify-center rounded-3xl z-40">
+            <div className="sticky flex flex-col md:flex-row z-40 items-center top-40 self-start max-w-xs lg:max-w-sm md:w-full">
+              <div className="h-10 absolute left-3 md:left-3 w-10 bg-background border flex items-center justify-center rounded-3xl z-40">
                 <div className="h-4 w-4 bg-black rounded-full border z-40" />
               </div>
               <h3 className="text-gray-300 hidden md:block md:pl-20 md:text-3xl font-bold text-muted-foreground/50 ">
@@ -72,8 +72,8 @@ export const Timeline = ({ data }: { data: Experience[] }) => {
                 <Image
                   src={item.img_url}
                   alt={item.img_url}
-                  width={400}
-                  height={400}
+                  width={500}
+                  height={500}
                   onLoad={() => {
                     if (ref.current) {
                       const rect = ref.current.getBoundingClientRect();

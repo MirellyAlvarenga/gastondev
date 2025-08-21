@@ -24,11 +24,11 @@ export default function Home() {
   const { translations, language, toggleLanguage } = useLanguage();
 
   return (
-    <div className="flex mt-8 bg-white dark:bg-black">
+    <div className="flex mt-8 bg-white dark:bg-black transition-colors duration-200">
       <Aside />
       <div
         id="main"
-        className="flex-1 py-16 pl-10 w-full bg-white dark:bg-black text-black dark:text-gray-100 space-y-20"
+        className="flex-1 py-16 pl-10 w-full bg-white dark:bg-black text-black dark:text-gray-100 space-y-20 transition-colors duration-200"
       >
         <section id="about" className="max-w-3xl">
           <h2 className="text-3xl font-bold border-b-2 border-gray-300 dark:border-gray-600 pb-2 mb-4">
