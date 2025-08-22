@@ -9,7 +9,7 @@ const Main = () => {
   return (
     <div className="pb-10 px-10 lg:pt-10">
       <section id="about" className="max-w-3xl">
-        <h2 className="text-3xl font-bold border-b-2 text-gray-800 border-gray-300 dark:border-gray-600 pb-2 mb-4">
+        <h2 className="text-3xl font-bold border-b-2 text-gray-800 dark:text-white border-gray-300 dark:border-gray-600 pb-2 mb-4">
           {translations.aboutMeTitle}
         </h2>
         <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
