@@ -1,23 +1,10 @@
 "use client";
 
 import Link from "next/link";
-import {
-  FaLinkedin,
-  FaGithub,
-  FaInstagram,
-  FaJava,
-  FaAngular,
-  FaJs,
-  FaHtml5,
-  FaCss3Alt,
-  FaDatabase,
-  FaSun,
-  FaMoon,
-} from "react-icons/fa";
-import { SiSpringboot, SiPowers } from "react-icons/si";
 import { useTheme } from "next-themes";
 import { useLanguage } from "@/app/context/LanguageContext";
 import Aside from "./_components/sections/Aside";
+import Skills from "../_components/skills";
 
 export default function Home() {
   const { theme, setTheme } = useTheme();
@@ -37,63 +24,7 @@ export default function Home() {
           <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
             {translations.aboutMeDescription}
           </p>
-          <div className="flex flex-wrap gap-6 mt-6">
-            <div className="flex items-center gap-2 bg-gray-200 p-2 rounded-md dark:bg-gray-800">
-              <FaJava className="text-2xl text-red-500" />
-              <span className="text-gray-800 dark:text-gray-300 text-sm">
-                Java
-              </span>
-            </div>
-
-            <div className="flex items-center gap-2 bg-gray-200 p-2 rounded-md dark:bg-gray-800">
-              <FaAngular className="text-2xl text-red-600" />
-              <span className="text-gray-800 dark:text-gray-300 text-sm">
-                Angular
-              </span>
-            </div>
-
-            <div className="flex items-center gap-2 bg-gray-200 p-2 rounded-md dark:bg-gray-800">
-              <FaJs className="text-2xl text-yellow-600" />
-              <span className="text-gray-800 dark:text-gray-300 text-sm">
-                JavaScript
-              </span>
-            </div>
-
-            <div className="flex items-center gap-2 bg-gray-200 p-2 rounded-md dark:bg-gray-800">
-              <SiSpringboot className="text-2xl text-green-600" />
-              <span className="text-gray-800 dark:text-gray-300 text-sm">
-                Spring Boot
-              </span>
-            </div>
-
-            <div className="flex items-center gap-2 bg-gray-200 p-2 rounded-md dark:bg-gray-800">
-              <FaDatabase className="text-2xl text-blue-600" />
-              <span className="text-gray-800 dark:text-gray-300 text-sm">
-                SQL
-              </span>
-            </div>
-
-            <div className="flex items-center gap-2 bg-gray-200 p-2 rounded-md dark:bg-gray-800">
-              <SiPowers className="text-2xl text-yellow-700" />
-              <span className="text-gray-800 dark:text-gray-300 text-sm">
-                Power BI
-              </span>
-            </div>
-
-            <div className="flex items-center gap-2 bg-gray-200 p-2 rounded-md dark:bg-gray-800">
-              <FaHtml5 className="text-2xl text-orange-600" />
-              <span className="text-gray-800 dark:text-gray-300 text-sm">
-                HTML
-              </span>
-            </div>
-
-            <div className="flex items-center gap-2 bg-gray-200 p-2 rounded-md dark:bg-gray-800">
-              <FaCss3Alt className="text-2xl text-blue-700" />
-              <span className="text-gray-800 dark:text-gray-300 text-sm">
-                CSS
-              </span>
-            </div>
-          </div>
+          <Skills />
         </section>
 
         <section id="education" className="max-w-3xl">
