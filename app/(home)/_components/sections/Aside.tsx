@@ -3,13 +3,12 @@ import { useLanguage } from "@/app/context/LanguageContext";
 import { useTheme } from "next-themes";
 import Link from "next/link";
 import React from "react";
-import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 
 const Aside = () => {
   const { theme, setTheme } = useTheme();
   const { translations, language, toggleLanguage } = useLanguage();
   return (
-    <aside className="flex flex-col items-center lg:sticky lg:top-[var(--navbar-height)] lg:h-[calc(100vh-var(--navbar-height))] lg:py-10 bg-white text-black m-1 p-1 dark:bg-black dark:text-slate-50 transition-colors duration-200">
+    <aside className="flex flex-col items-center lg:sticky lg:top-[var(--navbar-height)] lg:h-[calc(100vh-var(--navbar-height))] py-10 bg-white text-black m-1 p-1 dark:bg-black dark:text-slate-50 transition-colors duration-200">
       <img
         src="/images/Gaston.jpg"
         alt="Matheus Gaston"

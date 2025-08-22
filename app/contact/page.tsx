@@ -2,7 +2,6 @@
 
 import React, { useRef, useState, FormEvent } from "react";
 import { sendEmail } from "./email";
-import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 import Socials from "../_components/socials";
 
 const ContactPage = () => {
