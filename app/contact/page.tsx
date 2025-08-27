@@ -91,7 +91,7 @@ const ContactPage = () => {
               <input
                 type="email"
                 name="user_email"
-                placeholder="theteusviana@gmail.com"
+                placeholder="youremail@gmail.com"
                 className="w-full bg-transparent border border-gray-500 px-3 py-3"
                 required
               />
