@@ -4,7 +4,7 @@ Bem-vindo ao meu **portfólio pessoal**!
 
 Aqui você encontrará minhas experiências, projetos e um pouco sobre minha jornada como desenvolvedor.
 
-Confira em: [https://gastondev.vercel.app/]
+Confira em: <a href="https://gastondev.vercel.app/" target="_blank">https://gastondev.vercel.app/</a>
 
 ---
 ## Rodando localmente
