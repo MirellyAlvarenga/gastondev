@@ -4,7 +4,22 @@ Bem-vindo ao meu **portfólio pessoal**!
 
 Aqui você encontrará minhas experiências, projetos e um pouco sobre minha jornada como desenvolvedor.
 
+Confira em: https://gastondev.vercel.app/
+
 ---
+## Rodando localmente
+
+* Clone o repositório e instale as dependências.
+```bash
+  git clone https://github.com/GastonZinhow/gastondev.git
+  cd gastondev
+  npm install
+```
+* Inicie o servidor de desenvolvimento
+```bash
+  npm run dev
+```
+
 
 ##  Prototipagem
 
@@ -53,16 +68,20 @@ Link do protótipo no **Figma**: [Clique aqui para visualizar](https://www.figma
 
 ```bash
 app
- └── _components
-      ├── (home)
-      ├── contact
-      ├── experiences
-      ├── projects
-      └── resume
-imgs
+├── _components
+├── (home)
+├── contact
+├── context
+├── experiences
+├── locales
+├── projects
+└── resume
+lib
  └── ...
 public
- └── ...
+ └── images
+ └── pdfs
+
 ```
 
 ---
