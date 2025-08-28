@@ -1,10 +1,10 @@
 import "./globals.css";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import NavBar from "./NavBar";
+import { Roboto } from "next/font/google";
+import NavBar from "./_components/root/NavBar";
 import { Providers } from "./providers";
 
-const inter = Inter({ subsets: ["latin"] });
+const roboto = Roboto({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Matheus Gaston - Portfolio",
@@ -21,7 +21,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-BR" suppressHydrationWarning>
-      <body className={`${inter.className} bg-black text-white`}>
+      <body className={`${roboto.className} bg-black text-white`}>
         <Providers>
           <NavBar />
           <main className="pt-2">{children}</main>

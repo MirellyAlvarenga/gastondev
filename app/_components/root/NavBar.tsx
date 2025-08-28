@@ -6,7 +6,7 @@ import classnames from "classnames";
 import { useTheme } from "next-themes";
 import { FaAlignJustify, FaSun, FaMoon } from "react-icons/fa";
 import { IoCloseSharp } from "react-icons/io5";
-import { useLanguage } from "./context/LanguageContext";
+import { useLanguage } from "../../context/LanguageContext";
 
 const NavBar = () => {
   const currentPath = usePathname();
@@ -46,7 +46,7 @@ const NavBar = () => {
   return (
     <nav
       className={classnames(
-        "fixed w-full flex space-x-6 px-5 h-14 items-center z-50",
+        "fixed w-full flex space-x-6 px-5 h-14 items-center justify-between z-40",
         {
           "bg-black border-b border-white text-white": theme === "dark",
           "bg-white border-b border-gray-200 text-black": theme === "light",
@@ -62,7 +62,7 @@ const NavBar = () => {
       >
         Matheus Gaston
       </Link>
-      <ul className="hidden md:flex space-x-6 ">
+      <ul className="hidden md:flex space-x-6">
         {links.map((link) => (
           <Link
             key={link.href}
@@ -81,7 +81,7 @@ const NavBar = () => {
           </Link>
         ))}
       </ul>
-      <div className="fixed top-2 right-4 flex gap-4 z-50">
+      <div className="top-2 right-4 flex gap-4 z-50">
         <button
           onClick={toggleLanguage}
           className="p-2 rounded-full bg-gray-700 text-white hover:bg-gray-600 dark:bg-gray-800 dark:hover:bg-gray-700 transition-colors duration-200"

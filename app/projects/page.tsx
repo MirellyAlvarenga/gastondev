@@ -1,134 +1,141 @@
-import React from 'react';
-import Image from 'next/image';
+import React from "react";
+import Image from "next/image";
+import Canvas from "../_components/ui/canvas";
 
 const ProjectsPage = () => {
-return (
-  <div className="min-h-screen bg-black text-white p-8 py-16">
+  return (
+    <div className="container flex flex-col min-h-screen px-6 lg:px-4 mx-auto pt-16 pb-10 sm:pb-0 sm:pt-12 max-w-5xl">
+      <div className="relative flex items-center justify-center">
+        <Canvas />
 
-    <section className="flex flex-col lg:flex-row bg-black rounded-lg overflow-hidden shadow-lg mb-12 border border-white rounded-xl">
-      <div className="relative w-full lg:w-1/2 h-64 lg:h-auto">
-        <Image
-          src="/images/Projeto_1.webp"
-          alt="E-commerce Platform"
-          layout="fill"
-          objectFit="cover"
-          className="rounded-t-lg lg:rounded-l-lg lg:rounded-tr-none"
-        />
+        <h1 className="absolute text-4xl text-white font-bold bg-black rounded-full px-10 py-14 z-30">My Projects</h1>
       </div>
-      <div className="p-8 w-full lg:w-1/2 flex flex-col justify-between">
-        <div>
-          <h2 className="text-3xl font-bold mb-4 text-white">E-commerce Platform</h2>
-          <p className="text-gray-300 mb-4 leading-relaxed">
-            As a full-stack developer, I transform ideas into complete and intuitive
-            digital solutions. My expertise spans the frontend with React/Angular
-            and the robust backend with Node.js/Python, creating efficient APIs
-            and scalable databases. I'm passionate about clean code,
-            performance, and continuous learning, always pursuing best
-            development practices.
-          </p>
-          <p className="text-gray-300 mb-6 leading-relaxed">
-            I actively collaborate on agile teams, from planning to deployment,
-            proactively solving problems. My adaptability to new technologies
-            ensures the delivery of high-quality projects. I seek opportunities to
-            apply my skills to creating impactful products.
-          </p>
-        </div>
-        <div className="flex flex-wrap gap-3 mt-6">
-          <span className="inline-flex items-center justify-center px-6 py-3 bg-black text-white text-base rounded-md border border-yellow-500
-                             transition-all duration-300 ease-in-out hover:bg-yellow-500 hover:text-black cursor-pointer">Java</span>
-          <span className="inline-flex items-center justify-center px-6 py-3 bg-black text-white text-base rounded-md border border-yellow-500
-                             transition-all duration-300 ease-in-out hover:bg-yellow-500 hover:text-black cursor-pointer">React</span>
-          <span className="inline-flex items-center justify-center px-6 py-3 bg-black text-white text-base rounded-md border border-yellow-500
-                             transition-all duration-300 ease-in-out hover:bg-yellow-500 hover:text-black cursor-pointer">Angular</span>
-          <span className="inline-flex items-center justify-center px-6 py-3 bg-black text-white text-base rounded-md border border-yellow-500
-                             transition-all duration-300 ease-in-out hover:bg-yellow-500 hover:text-black cursor-pointer">SQL</span>
-        </div>
-      </div>
-    </section>
+      <div className="flex flex-col">
+        <section className="flex flex-col lg:flex-row bg-black overflow-hidden shadow-lg mb-12 border border-white rounded-xl">
+          <div className="relative w-full lg:w-1/2 h-64 lg:h-auto">
+            <Image
+              src="/images/Trenem.png"
+              alt="E-commerce Platform"
+              layout="fill"
+              objectFit="cover"
+              className="rounded-t-lg lg:rounded-l-lg lg:rounded-tr-none"
+            />
+          </div>
+          <div className="p-8 w-full lg:w-1/2 flex flex-col justify-between">
+            <div>
+              <h2 className="text-3xl font-bold mb-4 text-white">Trenem</h2>
+              <p className="text-gray-300 mb-4 leading-relaxed">
+                The idea came from the need to apply high school knowledge using
+                ENEM practice questions in an efficient and accessible way. It
+                is a mobile application inspired by Duolingo where the user
+                could train for ENEM questions.
+              </p>
 
-    <section className="flex flex-col lg:flex-row bg-black rounded-lg overflow-hidden shadow-lg mb-12 border border-white rounded-xl">
-      <div className="relative w-full lg:w-1/2 h-64 lg:h-auto">
-        <Image
-          src="/images/Projeto_2.png"
-          alt="Data Analytics Platform for Fintech"
-          layout="fill"
-          objectFit="cover"
-          className="rounded-t-lg lg:rounded-l-lg lg:rounded-tr-none"
-        />
-      </div>
-      <div className="p-8 w-full lg:w-1/2 flex flex-col justify-between">
-        <div>
-          <h2 className="text-3xl font-bold mb-4 text-white">Data Analytics Platform for Fintech</h2>
-          <p className="text-gray-300 mb-4 leading-relaxed">
-            As a software engineer with a data focus, I am a builder of
-            infrastructures that transform large volumes of information into
-            actionable insights. My proficiency lies in creating efficient data
-            pipelines using Python/Spark, developing RESTful APIs for data
-            consumption, and implementing distributed storage and processing
-            solutions (Kafka, Cassandra).
-          </p>
-          <p className="text-gray-300 mb-6 leading-relaxed">
-            I collaborate closely with data scientists and business analysts,
-            designing and implementing solutions that support predictive models
-            and interactive dashboards. My approach is results-oriented, with a
-            focus on continuous delivery and iterative improvement, utilizing agile
-            methodologies.
-          </p>
-        </div>
-        <div className="flex flex-wrap gap-3 mt-6">
-          <span className="inline-flex items-center justify-center px-6 py-3 bg-black text-white text-base rounded-md border border-yellow-500
-                             transition-all duration-300 ease-in-out hover:bg-yellow-500 hover:text-black cursor-pointer">Java</span>
-          <span className="inline-flex items-center justify-center px-6 py-3 bg-black text-white text-base rounded-md border border-yellow-500
-                             transition-all duration-300 ease-in-out hover:bg-yellow-500 hover:text-black cursor-pointer">React</span>
-          <span className="inline-flex items-center justify-center px-6 py-3 bg-black text-white text-base rounded-md border border-yellow-500
-                             transition-all duration-300 ease-in-out hover:bg-yellow-500 hover:text-black cursor-pointer">Angular</span>
-          <span className="inline-flex items-center justify-center px-6 py-3 bg-black text-white text-base rounded-md border border-yellow-500
-                             transition-all duration-300 ease-in-out hover:bg-yellow-500 hover:text-black cursor-pointer">SQL</span>
-        </div>
-      </div>
-    </section>
+              <ul className="list-disc list-inside text-gray-300 leading-relaxed space-y-2">
+                <li>
+                  The landing pages of the application were developed in React,
+                  following the design pattern;
+                </li>
+                <li>
+                  We used more than 17,000 questions for the test database,
+                  extracted using a Python crawler;
+                </li>
+                <li>
+                  The project development followed the Scrum methodology, with
+                  the role of Scrum Master being applied to ensure agile and
+                  organized deliveries.
+                </li>
+              </ul>
+            </div>
+            <div className="flex flex-wrap gap-3 mt-6">
+              <span
+                className="inline-flex items-center justify-center px-6 py-3 bg-black text-white text-base rounded-md border border-yellow-500
+                              transition-all duration-300 ease-in-out hover:bg-yellow-500 hover:text-black cursor-pointer"
+              >
+                React Native
+              </span>
+              <span
+                className="inline-flex items-center justify-center px-6 py-3 bg-black text-white text-base rounded-md border border-yellow-500
+                              transition-all duration-300 ease-in-out hover:bg-yellow-500 hover:text-black cursor-pointer"
+              >
+                TypeScript
+              </span>
+              <span
+                className="inline-flex items-center justify-center px-6 py-3 bg-black text-white text-base rounded-md border border-yellow-500
+                              transition-all duration-300 ease-in-out hover:bg-yellow-500 hover:text-black cursor-pointer"
+              >
+                Python
+              </span>
+              <span
+                className="inline-flex items-center justify-center px-6 py-3 bg-black text-white text-base rounded-md border border-yellow-500
+                              transition-all duration-300 ease-in-out hover:bg-yellow-500 hover:text-black cursor-pointer"
+              >
+                SQL
+              </span>
+            </div>
+          </div>
+        </section>
 
-    <section className="flex flex-col lg:flex-row bg-black rounded-lg overflow-hidden shadow-lg mb-12 border border-white rounded-xl">
-      <div className="relative w-full lg:w-1/2 h-64 lg:h-auto">
-        <Image
-          src="/images/Projeto_3.jpg"
-          alt="Intelligent Hospital Management System"
-          layout="fill"
-          objectFit="cover"
-          className="rounded-t-lg lg:rounded-l-lg lg:rounded-tr-none"
-        />
+        <section className="flex flex-col lg:flex-row bg-black overflow-hidden shadow-lg mb-12 border border-white rounded-xl">
+          <div className="relative w-full lg:w-1/2 h-64 lg:h-auto">
+            <Image
+              src="/images/giostri.jpg"
+              alt="Data Analytics Platform for Fintech"
+              layout="fill"
+              objectFit="cover"
+              className="rounded-t-lg lg:rounded-l-lg lg:rounded-tr-none"
+            />
+          </div>
+          <div className="p-8 w-full lg:w-1/2 flex flex-col justify-between">
+            <div>
+              <h2 className="text-3xl font-bold mb-4 text-white">
+                Giostri Constructions
+              </h2>
+              <p className="text-gray-300 mb-4 leading-relaxed">
+                This project was developed as part of my backend development
+                studies using Java SpringBoot. It consists of a CRUD Rest API
+                with all endpoints, using the H2 test database.
+              </p>
+              <ul className="list-disc list-inside text-gray-300 leading-relaxed space-y-2">
+                <li>
+                  Structure logical layers: resource, service, repository;
+                </li>
+                <li>Configure test database (H2);</li>
+                <li>CRUD - Create, Read, Update, Delete;</li>
+                <li>Exception handling</li>
+              </ul>
+            </div>
+            <div className="flex flex-wrap gap-3 mt-6">
+              <span
+                className="inline-flex items-center justify-center px-6 py-3 bg-black text-white text-base rounded-md border border-yellow-500
+                              transition-all duration-300 ease-in-out hover:bg-yellow-500 hover:text-black cursor-pointer"
+              >
+                Java Spring Boot
+              </span>
+              <span
+                className="inline-flex items-center justify-center px-6 py-3 bg-black text-white text-base rounded-md border border-yellow-500
+                              transition-all duration-300 ease-in-out hover:bg-yellow-500 hover:text-black cursor-pointer"
+              >
+                HTML
+              </span>
+              <span
+                className="inline-flex items-center justify-center px-6 py-3 bg-black text-white text-base rounded-md border border-yellow-500
+                              transition-all duration-300 ease-in-out hover:bg-yellow-500 hover:text-black cursor-pointer"
+              >
+                CSS
+              </span>
+              <span
+                className="inline-flex items-center justify-center px-6 py-3 bg-black text-white text-base rounded-md border border-yellow-500
+                              transition-all duration-300 ease-in-out hover:bg-yellow-500 hover:text-black cursor-pointer"
+              >
+                JS
+              </span>
+            </div>
+          </div>
+        </section>
       </div>
-      <div className="p-8 w-full lg:w-1/2 flex flex-col justify-between">
-        <div>
-          <h2 className="text-3xl font-bold mb-4 text-white">Intelligent Hospital Management System</h2>
-          <p className="text-gray-300 mb-4 leading-relaxed">
-            As a software engineer, I am committed to developing robust,
-            scalable, and high-quality systems. My expertise spans from data
-            modeling and microservices architecture to the design and
-            implementation of intuitive user interfaces with modern frameworks. I&apos;m
-            apaixonado por performance, clean code, e aplicando SOLID
-            principles to ensure maintainability and scalability.
-          </p>
-          <p className="text-gray-300 mb-6 leading-relaxed">
-            I actively participate in all phases of the software development
-            lifecycle, from requirements gathering and prototyping to automated
-            testing and deployment in cloud environments (AWS/Azure).
-          </p>
-        </div>
-        <div className="flex flex-wrap gap-3 mt-6">
-          <span className="inline-flex items-center justify-center px-6 py-3 bg-black text-white text-base rounded-md border border-yellow-500
-                             transition-all duration-300 ease-in-out hover:bg-yellow-500 hover:text-black cursor-pointer">Java</span>
-          <span className="inline-flex items-center justify-center px-6 py-3 bg-black text-white text-base rounded-md border border-yellow-500
-                             transition-all duration-300 ease-in-out hover:bg-yellow-500 hover:text-black cursor-pointer">React</span>
-          <span className="inline-flex items-center justify-center px-6 py-3 bg-black text-white text-base rounded-md border border-yellow-500
-                             transition-all duration-300 ease-in-out hover:bg-yellow-500 hover:text-black cursor-pointer">Angular</span>
-          <span className="inline-flex items-center justify-center px-6 py-3 bg-black text-white text-base rounded-md border border-yellow-500
-                             transition-all duration-300 ease-in-out hover:bg-yellow-500 hover:text-black cursor-pointer">SQL</span>
-        </div>
-      </div>
-    </section>
-  </div>
-);
+    </div>
+  );
 };
 
 export default ProjectsPage;
