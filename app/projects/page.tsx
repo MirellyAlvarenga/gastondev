@@ -1,13 +1,16 @@
 import React from "react";
 import Image from "next/image";
+import Canvas from "../_components/ui/canvas";
 
 const ProjectsPage = () => {
   return (
-    <div className="min-h-screen bg-black text-white p-8 py-16">
-      <div className="text-4xl flex p-4 items-center justify-center">
-        <h1 className="text-4xl">My Projects</h1>
+    <div className="container flex flex-col min-h-screen px-6 lg:px-4 mx-auto pt-16 pb-10 sm:pb-0 sm:pt-12 max-w-5xl">
+      <div className="relative flex items-center justify-center">
+        <Canvas />
+
+        <h1 className="absolute text-4xl text-white font-bold bg-black rounded-full px-10 py-14 z-30">My Projects</h1>
       </div>
-      <div className="flex flex-col w-50">
+      <div className="flex flex-col">
         <section className="flex flex-col lg:flex-row bg-black overflow-hidden shadow-lg mb-12 border border-white rounded-xl">
           <div className="relative w-full lg:w-1/2 h-64 lg:h-auto">
             <Image
@@ -23,9 +26,9 @@ const ProjectsPage = () => {
               <h2 className="text-3xl font-bold mb-4 text-white">Trenem</h2>
               <p className="text-gray-300 mb-4 leading-relaxed">
                 The idea came from the need to apply high school knowledge using
-                ENEM practice questions in an efficient and accessible way. It is
-                a mobile application inspired by Duolingo where the user could
-                train for ENEM questions.
+                ENEM practice questions in an efficient and accessible way. It
+                is a mobile application inspired by Duolingo where the user
+                could train for ENEM questions.
               </p>
 
               <ul className="list-disc list-inside text-gray-300 leading-relaxed space-y-2">
@@ -38,9 +41,9 @@ const ProjectsPage = () => {
                   extracted using a Python crawler;
                 </li>
                 <li>
-                  The project development followed the Scrum methodology, with the
-                  role of Scrum Master being applied to ensure agile and organized
-                  deliveries.
+                  The project development followed the Scrum methodology, with
+                  the role of Scrum Master being applied to ensure agile and
+                  organized deliveries.
                 </li>
               </ul>
             </div>
@@ -90,11 +93,13 @@ const ProjectsPage = () => {
               </h2>
               <p className="text-gray-300 mb-4 leading-relaxed">
                 This project was developed as part of my backend development
-                studies using Java SpringBoot. It consists of a CRUD Rest API with
-                all endpoints, using the H2 test database.
+                studies using Java SpringBoot. It consists of a CRUD Rest API
+                with all endpoints, using the H2 test database.
               </p>
               <ul className="list-disc list-inside text-gray-300 leading-relaxed space-y-2">
-                <li>Structure logical layers: resource, service, repository;</li>
+                <li>
+                  Structure logical layers: resource, service, repository;
+                </li>
                 <li>Configure test database (H2);</li>
                 <li>CRUD - Create, Read, Update, Delete;</li>
                 <li>Exception handling</li>
@@ -129,7 +134,6 @@ const ProjectsPage = () => {
           </div>
         </section>
       </div>
-
     </div>
   );
 };
