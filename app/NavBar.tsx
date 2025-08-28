@@ -60,7 +60,7 @@ const NavBar = () => {
           "text-black": theme === "light",
         })}
       >
-        Mirelly Alvarenga
+        Matheus Gaston
       </Link>
       <ul className="hidden md:flex space-x-6 ">
         {links.map((link) => (

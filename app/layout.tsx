@@ -7,8 +7,8 @@ import { Providers } from "./providers";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Mirelly Alvarenga - Portfolio",
-  description: "Portfólio de Engenharia de Software de Mirelly Alvarenga",
+  title: "Matheus Gaston - Portfolio",
+  description: "Portfólio de Engenharia de Software de Matheus Gaston",
   icons: {
     icon: "/",
   },
