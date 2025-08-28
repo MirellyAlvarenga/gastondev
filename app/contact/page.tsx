@@ -2,7 +2,7 @@
 
 import React, { useRef, useState, FormEvent } from "react";
 import { sendEmail } from "./email";
-import Socials from "../_components/socials";
+import Socials from "../_components/ui/socials";
 
 const ContactPage = () => {
   const formRef = useRef<HTMLFormElement | null>(null);

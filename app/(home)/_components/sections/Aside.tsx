@@ -1,4 +1,4 @@
-import Socials from "@/app/_components/socials";
+import Socials from "@/app/_components/ui/socials";
 import { useLanguage } from "@/app/context/LanguageContext";
 import { useTheme } from "next-themes";
 import Link from "next/link";

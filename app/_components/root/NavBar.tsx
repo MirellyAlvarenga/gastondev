@@ -6,7 +6,7 @@ import classnames from "classnames";
 import { useTheme } from "next-themes";
 import { FaAlignJustify, FaSun, FaMoon } from "react-icons/fa";
 import { IoCloseSharp } from "react-icons/io5";
-import { useLanguage } from "./context/LanguageContext";
+import { useLanguage } from "../../context/LanguageContext";
 
 const NavBar = () => {
   const currentPath = usePathname();

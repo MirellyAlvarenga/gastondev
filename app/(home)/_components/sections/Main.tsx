@@ -1,4 +1,4 @@
-import Skills from "@/app/_components/skills";
+import Skills from "@/app/_components/ui/skills";
 import { useLanguage } from "@/app/context/LanguageContext";
 import { useTheme } from "next-themes";
 import React from "react";
