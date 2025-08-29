@@ -11,8 +11,8 @@ Confira em: <a href="https://gastondev.vercel.app/" target="_blank">https://mire
 
 * Clone o repositório e instale as dependências.
 ```bash
-  git clone https://github.com/GastonZinhow/gastondev.git
-  cd gastondev
+  git clone https://github.com/GastonZinhow/portifolio-mirelly-alvarenga.git
+  cd portifolio-mirelly-alvarenga
   npm install
 ```
 * Inicie o servidor de desenvolvimento
