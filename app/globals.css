@@ -7,15 +7,22 @@ margin: 0;
 padding: 0;
 box-sizing: border-box;
 }
+
 html {
 margin: 0;
 padding: 0;
 box-sizing: border-box;
 transition: background-color 0.3s ease, color 0.3s ease;
 }
+
 :root {
-  --navbar-height: 60px;
+--navbar-height: 60px;
 }
+
+body {
+font-family: var(--font-jetbrains-mono, 'JetBrains Mono', monospace);
+}
+
 #main {
-padding-top: 60px; 
+padding-top: 60px;
 }
