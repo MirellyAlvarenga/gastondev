@@ -39,11 +39,6 @@ const Skills = () => {
       </div>
 
       <div className="flex items-center gap-2 bg-gray-200 p-2 rounded-md dark:bg-gray-800">
-        <FaPython className="text-2xl text-yellow-400" />
-        <span className="text-gray-800 dark:text-gray-300 text-sm">Python</span>
-      </div>
-
-      <div className="flex items-center gap-2 bg-gray-200 p-2 rounded-md dark:bg-gray-800">
         <RiTailwindCssFill className="text-2xl text-blue-700" />
         <span className="text-gray-800 dark:text-gray-300 text-sm">Tailwind</span>
       </div>
@@ -51,16 +46,6 @@ const Skills = () => {
       <div className="flex items-center gap-2 bg-gray-200 p-2 rounded-md dark:bg-gray-800">
         <FaDatabase className="text-2xl text-blue-600" />
         <span className="text-gray-800 dark:text-gray-300 text-sm">SQL</span>
-      </div>
-
-      <div className="flex items-center gap-2 bg-gray-200 p-2 rounded-md dark:bg-gray-800">
-        <FaHtml5 className="text-2xl text-orange-600" />
-        <span className="text-gray-800 dark:text-gray-300 text-sm">HTML</span>
-      </div>
-
-      <div className="flex items-center gap-2 bg-gray-200 p-2 rounded-md dark:bg-gray-800">
-        <FaCss3Alt className="text-2xl text-blue-700" />
-        <span className="text-gray-800 dark:text-gray-300 text-sm">CSS</span>
       </div>
     </div>
   );

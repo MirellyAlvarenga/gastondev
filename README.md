@@ -1,8 +1,8 @@
-# Matheus Gaston – Personal Portfolio
+# Mirelly Alvarenga – Personal Portfolio
 
 Bem-vindo ao meu **portfólio pessoal**! 
 
-Aqui você encontrará minhas experiências, projetos e um pouco sobre minha jornada como desenvolvedor.
+Aqui você encontrará minhas experiências, projetos e um pouco sobre minha jornada como desenvolvedora.
 
 Confira em: <a href="https://gastondev.vercel.app/" target="_blank">https://gastondev.vercel.app/</a>
 

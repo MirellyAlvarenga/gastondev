@@ -7,8 +7,8 @@ import { Providers } from "./providers";
 const roboto = Roboto({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Matheus Gaston - Portfolio",
-  description: "Portfólio de Engenharia de Software de Matheus Gaston",
+  title: "Mirelly Alvarenga - Portfolio",
+  description: "Portfólio de Engenharia de Software de Mirelly Alvarenga",
   icons: {
     icon: "/",
   },
